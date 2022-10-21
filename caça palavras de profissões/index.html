@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça Palavras</title>
+    <style>
+         table{
+            background-color: #fa8d45;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+    border: 1px solid black;
+
+         }
+        
+td{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
+#x90,#x91,#x92,#x93,#x94,#x95,#x96, #x97{
+    background-color: #04a1c9;
+
+}
+
+#x140,#x141,#x142,#x143,#x144,#x145{
+    background-color: red;
+
+}
+
+#x162,#x184,#x206,#x228,#x250,#x272,#x294,#x316,#x338{
+    background-color:rgb(255, 0, 221);
+}
+
+
+#x248,#x249,#x250,#x251,#x252,#x253,#x254{
+    background-color: brown;
+
+}
+#x277,#x299,#x321,#x743,#x255{
+    background-color: aqua;
+}
+
+#x20,#x42,#x64,#x86,#x108,#x130,#x152,#x174,#x196{
+    background-color: chartreuse;
+}
+
+#x31,#x32,#x33,#x34,#x35,#x36,#x37{
+    background-color: crimson;
+}
+
+#x18,#x40, #x62, #x84, #x106, #x128, #x150, #x172{
+    background-color: cornflowerblue;
+}
+
+#x112, #x134, #x156, #x178, #x200, #x222, #x244{
+    background-color: forestgreen;
+} 
+
+#x1, #x2, #x3, #x4, #x5, #x6{
+    background-color: mediumslateblue;
+}
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Caça palavras profissões</h1>
+    <table>
+        <script>
+        
+        matriz = new Array;
+        matriz = [
+            
+        ["P","I","L","O","T","O","H","A","R","R","E","D","D","G","O","I","R","B","S","P","M","V"],
+        ["R","R","M","W","B","R","E","A","T","A","X","I","S","T","A","E","E","A","A","R","P","N"],
+        ["E","U","H","E","B","F","L","H","T","R","S","N","E","I","H","S","O","R","D","O","E","N"],
+        ["O","U","I","T","N","T","P","E","A","T","A","U","L","H","O","M","L","B","I","F","H","K"],
+        ["N","P","O","L","Í","C","I","A","L","D","T","S","T","H","T","C","O","E","L","E","J","T"],
+        ["N","A","E","C","L","O","A","C","M","D","S","V","G","F","A","S","I","I","E","S","L","N"],
+        ["N","R","S","A","E","A","L","M","É","D","I","C","O","D","A","L","F","R","U","S","T","K"],
+        ["H","T","B","O","E","T","R","A","N","E","E","R","D","F","E","C","B","O","E","O","R","E"],
+        ["R","E","I","S","S","N","C","Q","U","A","E","M","M","E","D","N","R","P","U","R","E","T"],
+        ["E","I","O","G","C","F","V","U","D","D","C","O","S","H","O","H","H","V","N","E","U","L"],
+        ["E","R","T","I","D","N","H","I","F","E","D","N","F","T","I","D","U","A","C","D","P","O"],
+        ["H","O","N","H","S","D","E","N","T","I","S","T","A","P","D","R","T","G","O","U","A","S"],
+        ["I","E","U","V","C","U","O","I","G","O","F","I","T","M","E","M","G","O","R","N","L","E"],
+        ["D","A","I","G","W","T","G","S","H","L","S","O","O","R","D","E","R","R","W","I","I","W"],
+        ["I","H","C","A","B","E","S","T","I","I","H","E","R","A","P","R","T","T","E","R","N","H"],
+        ["M","L","H","Y","E","D","L","A","T","D","O","F","T","N","N","S","A","T","M","E","N","Y"],
+
+];       
+        
+        var x = 0;
+        for(linha  = 0; linha < 16; linha++){
+            document.write("<tr>");
+            for(coluna = 0; coluna < 22; coluna ++){
+                x++;
+                document.write("<td id = 'x"+x+"'>" + matriz[linha][coluna]+ "</td>" );                
+            }
+            document.write("</tr>");
+        }
+        </script>
+    </table>
+        <h1 align="center">Palavras</h1>
+        <p align="center">ATOR</p>
+        <p align="center">DENTISTA</p>
+        <p align="center">MAQUINISTA</p>
+        <p align="center">MÉDICO</p>
+        <p align="center">POLÍCIA</p>
+        <p align="center">PROFESSOR</p>
+        <p align="center">TAXISTA</p>
+        <p align="center">PARTEIRO</p>
+        <p align="center">PILOTO</p>
+        <p align="center">BARBEIRO</p>
+</body>
+</html>
